@@ -27,7 +27,7 @@ export const ShoppingPage = () => {
                   className="bg-dark text-white"
                   key={product.id}
                   onChange={onProductCountChange}
-                  value={shoppingCart[product.id]?.count || 1}
+                  value={shoppingCart[product.id]?.count || 0}
                >
                   <ProductImage />
                   <ProductTile />
