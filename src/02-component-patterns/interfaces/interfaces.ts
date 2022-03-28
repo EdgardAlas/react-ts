@@ -1,3 +1,4 @@
+import { CSSProperties } from "react";
 import { Props as ProductCardProps } from "../components/ProductCard";
 
 export interface Product {
@@ -31,4 +32,14 @@ export interface ProductTitleProps {
 
 export interface ProductButtonsProps {
    className?: string;
+   style?: CSSProperties;
+}
+
+export interface OnChangeArgs {
+   product: Product;
+   count: number;
+}
+
+export interface ProductInCart extends Product {
+   count: number;
 }
