@@ -1,4 +1,4 @@
-import { createContext, CSSProperties, ReactNode } from "react";
+import { createContext, CSSProperties } from "react";
 import { useProduct } from "../hooks/useProduct";
 import {
    InitialValues,
